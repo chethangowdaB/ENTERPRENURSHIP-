@@ -1,0 +1,33 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1{
+  font-family: 'Outfit', Courier, monospace;
+  font-size:1.5rem;
+  max-width: 100px;
+  text-align: center;
+
+
+}
+
+p{
+  font-size: large;
+}
+body{
+  background: white;
+}
+ul{
+  list-style-type: none;
+} */
+
+
+.product-detail {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.product-detail h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.product-detail p {
+  font-family: 'Times New Roman', Times, serif;
+}

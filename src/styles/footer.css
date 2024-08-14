@@ -1,0 +1,42 @@
+/* Ensure the footer sticks to the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-wrapper {
+    flex: 1;
+  }
+  
+  .footer {
+    background: #12c2e9c5;
+    padding: 20px 0;
+  }
+  
+  .foot-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .location {
+    display: flex;
+  }
+  
+  .add {
+    margin: 0 10px;
+  }
+  
+  .location p {
+    line-height: 30px;
+  }
+  

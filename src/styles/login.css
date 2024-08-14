@@ -1,0 +1,81 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://www.bing.com/ck/a?!&&p=8447e40ac4f10a68JmltdHM9MTcyMTE3NDQwMCZpZ3VpZD0yYzNlMmE0Yy02OWExLTZhMzMtMjg0NS0zOTgxNjgwYzZiYTYmaW5zaWQ9NTYyNw&ptn=3&ver=2&hsh=3&fclid=2c3e2a4c-69a1-6a33-2845-3981680c6ba6&u=a1L2ltYWdlcy9zZWFyY2g_cT1nZXQlMjBhJTIwYmVzdCUyMGJhY2tncm91bmQlMjBwaWMlMjBmb3IlMjBteSUyMGVudGVyJTIwcHJlbnVlciUyMHdlYnNpdGUlMjBmb3IlMjBhbHVtaW51bSUyMGFuZCUyMHVwdmMlMjB3b3JrcyZGT1JNPUlRRlJCQSZpZD0zRTQ5OEY5QjlGNzgyRkMzNDc3QzM3QjhDRDhFRTVGQzJDOTBCQUMz&ntb=1');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login-container {
+  background-color: rgba(240, 240, 240, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  width: calc(100% - 20px);
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signup-link a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

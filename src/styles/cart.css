@@ -1,0 +1,218 @@
+/* General styles */
+.cart-container {
+  padding: 2rem;
+  max-width: 1000px;
+  height: 70vh;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.gst-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.gst-section input,
+.manual-entry input,
+.manual-entry textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.gst-section button,
+.manual-entry button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gst-section button:hover,
+.manual-entry button:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  height: fit-content;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+td img {
+  max-width: 100px;
+  border-radius: 4px;
+}
+
+.delete-button {
+  padding: 0.5rem 1rem;
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+}
+
+.total-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.print-button,
+.send-quotation-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.print-button:hover,
+.send-quotation-button:hover {
+  background-color: #0056b3;
+}
+
+/* Aligner for seller and buyer info */
+.aligner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.seller-info,
+.buyer-info {
+  flex-basis: 48%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.seller-info h3,
+.buyer-info h3 {
+  margin-bottom: 1rem;
+}
+
+.seller-avatar {
+  position: absolute;
+  top: 0px;
+  right: 0rem;
+ 
+}
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.seller-avatar img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+/* Media query for print */
+@media print {
+  /* Hide non-essential elements */
+  .print-button,
+  .delete-button,
+  .send-quotation-button {
+    display: none !important;
+  }
+
+  /* Adjust table for print */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: red; /* Red background for th in print mode */
+    color: #fff;
+  }
+
+  td img {
+    max-width: 100px;
+    border-radius: 4px;
+  }
+
+  /* Adjust container styles for print */
+  .cart-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  /* Aligner styles */
+  .aligner {
+    display: block; /* Change to block for stack alignment in print */
+    margin-bottom: 1rem;
+  }
+
+  /* Seller and buyer info styles */
+  .seller-info,
+  .buyer-info {
+    flex-basis: 100%; /* Full width for print */
+    margin-bottom: 1rem;
+    padding: 1rem; /* Add padding for better separation */
+    border: 1px solid #ddd; /* Add border for seller and buyer info */
+  }
+
+  .seller-info {
+    margin-right: 0; /* Remove margin-right for print */
+  }
+}

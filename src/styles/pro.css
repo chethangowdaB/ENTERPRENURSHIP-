@@ -1,0 +1,15 @@
+.project-card-container {
+    max-width: 80%;
+    margin: 350px auto 0;
+    padding: 0px;
+    position: relative;
+    height: calc(120vh - 50px);
+    overflow-y: hidden;
+  }
+  
+  .pro {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
